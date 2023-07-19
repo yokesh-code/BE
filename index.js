@@ -2,9 +2,12 @@ const express = require('express');
 const bodyParser =  require('body-parser')
 const app =  express();
 
+const cors= require('cors')
+app.use(cors({origin:true}))
+
 const mongoose = require('mongoose')
 
-const dbUrl = "mongodb://localhost:27017/yokesh";
+const dbUrl = "mongodb://localhost:27017/srenevas";
 
 mongoose.connect(dbUrl,{useNewUrlParser:true});
 

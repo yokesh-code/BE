@@ -6,7 +6,7 @@ const student  =  require('../controllers/student')
 
 router.post('/', student.createStudent);
 
-router.get('/',  student.createStudent);
+router.get('/',  student.getStudent);
 
 
 module.exports = router;
